@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use App\Models\Banner;
+use App\Models\Carousel;
 use App\Models\Comment;
 use App\Models\Invitation;
 use App\Models\Post;
@@ -50,7 +50,7 @@ class DatabaseSeeder extends Seeder
             ->recycle($users)
             ->create();
 
-        $banners = Banner::factory(10)->create();
+        $carousel = Carousel::factory(10)->create();
 
         $sponsors = Sponsor::factory(10)->create();
     }

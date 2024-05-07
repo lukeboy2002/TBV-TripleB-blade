@@ -1,6 +1,6 @@
 <x-app-layout>
     <x-slot name="header">
-        <img class="max-h-full w-full object-cover object-left-top" src="{{asset('storage/slider/test.jpg')}}" alt="TripleB">
+        <livewire:carousel.index />
     </x-slot>
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
