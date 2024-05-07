@@ -1,6 +1,6 @@
-<div id="animation-carousel" class="relative w-full" data-carousel="static">
+<div id="animation-carousel" class="block relative w-full" data-carousel="static">
     <!-- Carousel wrapper -->
-    <div class="relative h-56 overflow-hidden md:h-96">
+    <div class="relative h-40 md:h-56 overflow-hidden lg:h-96">
         @foreach ($images as $image)
             <div class="hidden duration-200 ease-linear" data-carousel-item>
                 <img src="{{ asset($image->getImage() )}}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover" alt="...">
