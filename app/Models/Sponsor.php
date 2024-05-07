@@ -20,4 +20,18 @@ class Sponsor extends Model
         'url',
         'active'
     ];
+
+    public function scopeActive($query)
+    {
+        $query->where('active', true);
+    }
+
+    public function getImage()
+    {
+        if (str_starts_with($this->image, 'http')) {
+            return $this->image;
+        }
+
+        return '/storage/' . $this->image;
+    }
 }
