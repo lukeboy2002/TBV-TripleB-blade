@@ -44,9 +44,11 @@
                                     <x-dropdown-link href="{{ route('profile.show') }}">
                                         {{ __('Profile') }}
                                     </x-dropdown-link>
-
                                     <div class="border-t border-orange-500/30"></div>
-
+                                    <x-dropdown-link href="#">
+                                        {{ __('Add Carousel') }}
+                                    </x-dropdown-link>
+                                    <div class="border-t border-orange-500/30"></div>
                                     <!-- Authentication -->
                                     <form method="POST" action="{{ route('logout') }}" x-data>
                                         @csrf
