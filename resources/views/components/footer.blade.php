@@ -1,15 +1,5 @@
 <footer>
-    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-6 px-4 sm:px-6 lg:px-8 border-b border-orange-500/30 pb-8">
-        <div class="text-lg text-orange-500 font-black uppercase text-center pb-8 lg:pb-0">Our Sponsors</div>
-        <div class="mx-auto lg:mx-0 grid col-span-5 md:grid-cols-5 grid-cols-3 gap-8">
-            <img class="max-h-12" src="{{asset('storage/sponsor/partners-1-121x33.png')}}" alt="TripleB">
-            <img class="max-h-12" src="{{asset('storage/sponsor/partners-2-140x42.png')}}" alt="TripleB">
-            <img class="max-h-12" src="{{asset('storage/sponsor/partners-3-97x31.png')}}" alt="TripleB">
-            <img class="max-h-12" src="{{asset('storage/sponsor/partners-4-110x44.png')}}" alt="TripleB">
-            <img class="max-h-12" src="{{asset('storage/sponsor/partners-5-89x77.png')}}" alt="TripleB">
-        </div>
-
-    </div>
+    <livewire:sponsor.index />
     <div class="max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-4 py-6 px-4 sm:px-6 lg:px-8">
         <div class="sm:col-span-2">
             <div class="flex">
